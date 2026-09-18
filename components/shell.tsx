@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { ArrowUpRight, CircleDot } from "lucide-react";
 
 const nav = [
-  ["Projects", "/"], ["Radar", "/radar"], ["Insights", "/trend"],
-  ["Creative", "/creative"], ["Studio", "/studio"], ["Brand Brain", "/opportunity"],
+  ["项目", "/"], ["信号雷达", "/radar"], ["趋势洞察", "/trend"],
+  ["创意路线", "/creative"], ["内容工作室", "/studio"], ["品牌大脑", "/opportunity"],
 ];
 
 export function Shell({ children }: { children: React.ReactNode }) {
@@ -22,14 +22,14 @@ export function Shell({ children }: { children: React.ReactNode }) {
           {nav.map(([label, href]) => <Link key={label} href={href} className={`rounded-full px-4 py-2 text-xs font-medium transition hover:bg-black/5 ${pathname === href ? "bg-white shadow-sm" : "text-black/55"}`}>{label}</Link>)}
         </nav>
         <div className="ml-auto flex items-center gap-3">
-          <span className="hidden text-[10px] uppercase tracking-[.15em] text-black/40 md:block">Tmall · Autumn 2026</span>
+          <span className="hidden text-[10px] uppercase tracking-[.15em] text-black/40 md:block">天猫 · 2026 秋季项目</span>
           <Link href="/studio" className="grid h-9 w-9 place-items-center rounded-full bg-ink text-white"><ArrowUpRight size={16}/></Link>
         </div>
       </div>
     </header>
     <main>{children}</main>
     <footer className="border-t border-black/15 px-6 py-6 md:px-10 lg:px-14">
-      <div className="mx-auto flex max-w-[1600px] items-center justify-between text-[10px] uppercase tracking-[.16em] text-black/45"><span>AI IP LAB / Creative Intelligence System</span><span>Prototype · 2026</span></div>
+      <div className="mx-auto flex max-w-[1600px] items-center justify-between text-[10px] uppercase tracking-[.16em] text-black/45"><span>AI IP LAB / 创意智能系统</span><span>交互原型 · 2026</span></div>
     </footer>
   </div>
 }

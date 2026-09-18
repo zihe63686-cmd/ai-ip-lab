@@ -3,8 +3,8 @@ import "./globals.css";
 import { Shell } from "@/components/shell";
 
 export const metadata: Metadata = {
-  title: "AI IP LAB — Creative Intelligence",
-  description: "From cultural signals to creative systems.",
+  title: "AI IP LAB — 创意智能平台",
+  description: "从文化信号到创意系统。",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

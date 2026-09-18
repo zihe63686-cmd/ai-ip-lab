@@ -1,15 +1,15 @@
 {
   "project": {
     "brand": "天猫",
-    "campaign": "天猫秋季焕新",
+    "campaign": "一万种秋天生活实验",
     "industry": "综合电商 / 生活方式",
-    "audience": "18–30岁城市年轻消费者",
+    "audience": "18–30岁、正在重新定义理想生活的城市青年",
     "platform": "小红书",
-    "trendWindow": "Last 7 Days",
-    "objective": "建立秋季心智，并将趋势兴趣转化为生活方式探索与商品收藏",
-    "budget": "¥ 8,000,000",
-    "period": "2026.09.01 — 2026.10.15",
-    "restrictions": "不制造生活焦虑；避免单一审美标准；商品植入需服务内容价值。"
+    "trendWindow": "最近 7 天",
+    "objective": "搜索小红书近期生活方式信号，找到“适合自己比追赶流行更重要”的文化机会，并生成可持续的秋季品牌IP",
+    "budget": "¥ 12,000,000",
+    "period": "2026.09.21 — 2026.11.11",
+    "restrictions": "不制造生活焦虑；不输出统一的理想生活模板；避免测试结果标签化；商品只作为实现生活方式的工具。"
   },
   "trends": [
     {"name":"具体任务化生活","tag":"#周末任务卡","velocity":84,"novelty":72,"persistence":68,"engagement":91,"relevance":86,"status":"Accelerating","signal":"年轻人用具体、可完成的小任务重新获得生活掌控感。"},
