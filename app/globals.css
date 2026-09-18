@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-sans: Inter, "SF Pro Display", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  --font-serif: "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f2f0e9; color: #161613; font-family: var(--font-sans), Arial, sans-serif; }
+::selection { background: #dbff3d; color: #161613; }
+
+@layer components {
+  .page { @apply mx-auto max-w-[1600px] px-6 pb-24 pt-8 md:px-10 lg:px-14; }
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[0.22em] text-black/45; }
+  .display { @apply max-w-5xl font-serif text-5xl font-medium leading-[0.98] tracking-[-0.05em] md:text-7xl lg:text-[92px]; }
+  .section-title { @apply font-serif text-3xl leading-tight tracking-[-0.03em] md:text-5xl; }
+  .hairline { @apply border border-black/15; }
+  .panel { @apply border border-black/15 bg-white/60; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-black; }
+  .btn-light { @apply inline-flex items-center justify-center gap-2 rounded-full border border-black/20 bg-white/70 px-4 py-2 text-xs font-semibold transition hover:border-black hover:bg-white; }
+  .field { @apply w-full border-0 border-b border-black/20 bg-transparent px-0 py-3 text-[15px] outline-none transition placeholder:text-black/30 focus:border-black; }
+  .metric { @apply font-serif text-4xl tracking-[-0.04em] md:text-5xl; }
+}
+
+.grain::after { content:""; position:fixed; inset:0; pointer-events:none; opacity:.045; z-index:60; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E"); }
+.marquee { animation: marquee 22s linear infinite; }
+@keyframes marquee { to { transform: translateX(-50%); } }

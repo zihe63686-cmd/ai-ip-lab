@@ -1,0 +1,27 @@
+{
+  "project": {
+    "brand": "天猫",
+    "campaign": "天猫秋季焕新",
+    "industry": "综合电商 / 生活方式",
+    "audience": "18–30岁城市年轻消费者",
+    "platform": "小红书",
+    "trendWindow": "Last 7 Days",
+    "objective": "建立秋季心智，并将趋势兴趣转化为生活方式探索与商品收藏",
+    "budget": "¥ 8,000,000",
+    "period": "2026.09.01 — 2026.10.15",
+    "restrictions": "不制造生活焦虑；避免单一审美标准；商品植入需服务内容价值。"
+  },
+  "trends": [
+    {"name":"具体任务化生活","tag":"#周末任务卡","velocity":84,"novelty":72,"persistence":68,"engagement":91,"relevance":86,"status":"Accelerating","signal":"年轻人用具体、可完成的小任务重新获得生活掌控感。"},
+    {"name":"感官种草","tag":"#摸得到的秋天","velocity":92,"novelty":88,"persistence":61,"engagement":89,"relevance":78,"status":"Emerging","signal":"触感、气味与环境声正在替代产品参数成为购买理由。"},
+    {"name":"适我主义","tag":"#适合比流行重要","velocity":89,"novelty":81,"persistence":87,"engagement":94,"relevance":96,"status":"Accelerating","signal":"拒绝统一模板，重新定义只对自己成立的好生活。"},
+    {"name":"秋日轻暖包裹","tag":"#轻暖叠穿","velocity":64,"novelty":45,"persistence":92,"engagement":74,"relevance":83,"status":"Persistent","signal":"低饱和、轻材质和包裹感构成秋季安全感。"},
+    {"name":"遥远的相似性","tag":"#同频陌生人","velocity":71,"novelty":79,"persistence":57,"engagement":82,"relevance":69,"status":"Emerging","signal":"陌生人因相似习惯和微小偏好产生跨地域连接。"}
+  ],
+  "routes": [
+    {"id":"01","title":"一万种秋天使用说明","type":"Personalization IP","proposition":"秋天没有标准答案。","accent":"acid","bigIdea":"把秋季趋势翻译成每个人都能执行的私人生活说明书。","why":"人们正在从追赶统一潮流，转向寻找真实适配自己的生活。","mechanism":"完成5道生活选择题，获得专属秋日人格、城市路线、生活任务与商品工具包。","social":"晒出你的「秋天使用说明」，寻找同款秋日人格。","ugc":"个性说明书卡片 + 实地打卡任务 + 周末路线复刻","offline":"在城市街区设置可撕取的秋日任务亭。","pr":"发布《中国年轻人的一万种秋天》趋势报告。","product":"商品是完成生活任务的工具，而不是答案。","risk":"人格测试形式常见；必须用真实地点与任务提升实用性。"},
+    {"id":"02","title":"摸到秋天了","type":"Sensory Campaign","proposition":"让秋天从屏幕里长出触感。","accent":"clay","bigIdea":"用触觉、气味与声音重新发现秋季商品。","why":"感官内容正在成为高互动的非参数化种草语言。","mechanism":"一组可触摸的城市橱窗与线上ASMR产品档案。","social":"只拍手和材质的「秋天触感接力」。","ugc":"用三种材质拼出自己的秋天。","offline":"触觉图书馆快闪。","pr":"首个城市秋季触感指数。","product":"以材质而非品类组织商品。","risk":"感官线上转译有限，需要高质量声音与微距视觉。"},
+    {"id":"03","title":"城市秋日随机事件","type":"Social Experience","proposition":"让平常一天，随机掉落一点秋天。","accent":"sage","bigIdea":"把城市中偶遇的微小秋意变成可领取的生活奖励。","why":"被计划填满的年轻人渴望低成本、无压力的意外。","mechanism":"地图每天释放限时秋日事件和轻任务。","social":"今天你的城市掉落了什么？","ugc":"拍下偶遇事件，解锁下一城市线索。","offline":"落叶车站、黄昏面包、风声电话亭。","pr":"城市幸福偶遇实验。","product":"商品作为随机奖励与任务道具。","risk":"执行点位多，需控制运营复杂度。"},
+    {"id":"04","title":"和秋天撞个同款","type":"Visual UGC","proposition":"世界很大，我们刚好共享一种秋天。","accent":"paper","bigIdea":"用视觉识别匹配不同城市里相似的秋日瞬间。","why":"年轻人渴望低社交压力但高情绪共鸣的连接。","mechanism":"上传一张秋日照片，AI匹配另一座城市的同款瞬间。","social":"跨城同款照片双联画。","ugc":"色彩、构图与情绪匹配挑战。","offline":"跨城市实时联动画廊。","pr":"最远距离的同一个秋天。","product":"商品作为画面里的共同线索。","risk":"图像匹配质量决定惊喜感。"}
+  ]
+}
