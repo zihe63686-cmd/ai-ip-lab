@@ -4,9 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, CircleDot } from "lucide-react";
 
+import { QuickStart } from './quick-start';
 const nav = [
-  ["项目", "/"], ["信号雷达", "/radar"], ["趋势洞察", "/trend"],
-  ["创意路线", "/creative"], ["内容工作室", "/studio"], ["品牌大脑", "/opportunity"],
+  ["项目", "/"], ["热点雷达", "/radar"], ["趋势洞察", "/trend"],
+  ["创意路线", "/creative"], ["内容工作室", "/studio"], ["品牌大脑", "/brand"],
 ];
 
 export function Shell({ children }: { children: React.ReactNode }) {
@@ -16,12 +17,12 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <div className="mx-auto flex h-[68px] max-w-[1600px] items-center px-6 md:px-10 lg:px-14">
         <Link href="/" className="mr-10 flex items-center gap-3 whitespace-nowrap font-bold tracking-[-0.03em]">
           <span className="grid h-7 w-7 place-items-center rounded-full bg-ink text-acid"><CircleDot size={15}/></span>
-          AI IP LAB
+          AI营销工作台
         </Link>
-        <nav className="hidden items-center gap-1 lg:flex">
-          {nav.map(([label, href]) => <Link key={label} href={href} className={`rounded-full px-4 py-2 text-xs font-medium transition hover:bg-black/5 ${pathname === href ? "bg-white shadow-sm" : "text-black/55"}`}>{label}</Link>)}
+        <nav className="main-nav items-center gap-1 lg:flex">
+          {nav.map(([label, href]) => <Link key={label} href={href} className={`nav-link px-3 py-2 font-semibold transition hover:bg-black/5 ${pathname === href ? "nav-active" : "text-black/55"}`}>{label}</Link>)}
         </nav>
-        <div className="ml-auto flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-3"><QuickStart/>
           <span className="hidden text-[10px] uppercase tracking-[.15em] text-black/40 md:block">天猫 · 2026 秋季项目</span>
           <Link href="/studio" className="grid h-9 w-9 place-items-center rounded-full bg-ink text-white"><ArrowUpRight size={16}/></Link>
         </div>
@@ -29,7 +30,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
     </header>
     <main>{children}</main>
     <footer className="border-t border-black/15 px-6 py-6 md:px-10 lg:px-14">
-      <div className="mx-auto flex max-w-[1600px] items-center justify-between text-[10px] uppercase tracking-[.16em] text-black/45"><span>AI IP LAB / 创意智能系统</span><span>交互原型 · 2026</span></div>
+      <div className="mx-auto flex max-w-[1600px] items-center justify-between text-[10px] uppercase tracking-[.16em] text-black/45"><span>AI营销工作台 / 创意智能系统</span><span>交互原型 · 2026</span></div>
     </footer>
   </div>
 }

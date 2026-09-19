@@ -1,0 +1,3 @@
+"use client";
+import {useEffect,useState} from 'react';import Link from 'next/link';import {getProjectReferences} from '@/services/brandBrain';import {brandProjects} from '@/data/brandProjects';
+export function BrandReferences(){const [refs,setRefs]=useState<string[]>([]);useEffect(()=>setRefs(getProjectReferences('tmall-autumn-2026')),[]);return <section className="panel p-5 my-5"><p className="eyebrow">Brand Context / 参考项目</p>{refs.length?refs.map(id=><p className="mt-3" key={id}>{brandProjects.find(p=>p.id===id)?.name}</p>):<p className="my-3">尚未加入历史项目</p>}<Link className="btn-light mt-3" href="/brand">浏览品牌历史项目资产库</Link></section>}

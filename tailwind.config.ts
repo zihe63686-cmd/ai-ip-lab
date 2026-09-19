@@ -5,11 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#161613",
-        paper: "#f2f0e9",
-        acid: "#dbff3d",
-        clay: "#d7774b",
-        sage: "#8b9a78",
+        ink: "#2F261F",
+        paper: "#F6F1E8",
+        acid: "#EBD9C1",
+        clay: "#A84E2C",
+        sage: "#78805A",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Arial", "sans-serif"],

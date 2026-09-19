@@ -3,7 +3,7 @@ import "./globals.css";
 import { Shell } from "@/components/shell";
 
 export const metadata: Metadata = {
-  title: "AI IP LAB — 创意智能平台",
+  title: "AI营销工作台 — 创意智能平台",
   description: "从文化信号到创意系统。",
 };
 

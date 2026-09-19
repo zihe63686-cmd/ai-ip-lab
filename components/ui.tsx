@@ -9,7 +9,7 @@ export function Header({ step, title, intro, aside }: { step: string; title: str
 }
 
 export function StepBar({ current }: { current: number }) {
-  const items = ["信号", "趋势", "人群洞察", "品牌机会", "创意路线", "整合战役", "创意资产"];
+  const items = ["热点", "趋势", "推荐趋势", "品牌机会", "创意路线", "整合战役", "内容资产"];
   return <div className="overflow-hidden border-y border-black/15 bg-white/40"><div className="mx-auto flex max-w-[1600px] items-center overflow-x-auto px-6 md:px-10 lg:px-14">{items.map((x,i)=><div key={x} className={`flex shrink-0 items-center py-4 text-[10px] uppercase tracking-[.14em] ${i <= current ? "text-black" : "text-black/30"}`}><span className={`mr-2 grid h-5 w-5 place-items-center rounded-full border ${i === current ? "border-black bg-ink text-white" : "border-black/20"}`}>{i+1}</span>{x}{i<items.length-1&&<ArrowRight size={12} className="mx-4 text-black/25"/>}</div>)}</div></div>
 }
 

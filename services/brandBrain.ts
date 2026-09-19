@@ -1,0 +1,6 @@
+import {brandProjects} from '@/data/brandProjects';import {mockResponse} from './mock';import type {BrandPastProject} from '@/types/brand';
+const key='ai-ip-lab-brand-context';
+export function getProjectReferences(projectId:string):string[]{try{return JSON.parse(localStorage.getItem(key)||'{}')[projectId]?.referenceProjects||[]}catch{return []}}
+export interface BrandBrainAdapter{getBrandPastProjects(brandId:string):Promise<BrandPastProject[]>;attachProjectReference(currentProjectId:string,referenceProjectId:string):Promise<string[]>}
+export const brandBrainAdapter:BrandBrainAdapter={getBrandPastProjects:(brandId)=>mockResponse(brandId==='tmall'?brandProjects:[]),attachProjectReference:async(currentProjectId,referenceProjectId)=>{if(!brandProjects.some(p=>p.id===referenceProjectId))throw Error('Unknown project');await mockResponse(null);let all:Record<string,{brand:string;referenceProjects:string[]}>= {};try{all=JSON.parse(localStorage.getItem(key)||'{}')}catch{}const refs=Array.from(new Set([...getProjectReferences(currentProjectId),referenceProjectId]));all[currentProjectId]={brand:'天猫',referenceProjects:refs};localStorage.setItem(key,JSON.stringify(all));return refs}};
+export const {getBrandPastProjects,attachProjectReference}=brandBrainAdapter;

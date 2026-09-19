@@ -1,0 +1,1 @@
+import data from '@/data/mock-data.json';export type CreativeRoute=typeof data.routes[number];export type RemixType='更社交'|'更年轻'|'更大胆'|'更高级'|'更线下'|'更事件化'|'更UGC'|'低预算';

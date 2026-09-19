@@ -5,11 +5,11 @@ const tension = [
   ["行为变化","主动缩小选择范围，用个人习惯、体型和节奏筛选生活方案。"],
   ["情感需求","在过量标准和比较中，重新确认自己的判断是有效的。"],
   ["人群张力","世界持续提供标准答案，但个体越来越不愿被同一种理想生活定义。"],
-  ["人群洞察","人们真正想要的不是最流行的生活，而是最适合自己的生活。"]
+  ["趋势洞察 → 用户需求 → 品牌机会","人们真正想要的不是最流行的生活，而是最适合自己的生活。"]
 ];
 
 export default function TrendPage(){return <><StepBar current={2}/><div className="page"><Header step="趋势深潜 / 03" title="适我主义" intro="不是反流行，而是把流行重新剪裁成自己的尺寸。一个由个人适配、微小确信与自主选择共同构成的新生活观。" aside="#适合比流行重要 · 1860万浏览 · 周环比 +89%"/>
   <div className="grid border-b border-black/15 lg:grid-cols-4">{[["是什么","从“最佳答案”转向“个人适配”，价值判断从外部共识回到身体与日常。"],["谁在参与","18–30岁城市青年，尤其是曾经积极跟随攻略、如今开始减少比较的人群。"],["为什么是现在","算法带来的过量选择与审美同质化，让“选择适合自己”成为新的自我照顾。"],["证据","“小个子友好”“低能量周末”“一人食尺寸”等具体适配词持续上升。"]].map(([h,p],i)=><section key={h} className={`py-7 lg:px-6 ${i?"lg:border-l lg:border-black/15":""}`}><p className="eyebrow mb-12">0{i+1} / {h}</p><p className="text-base leading-relaxed text-black/70">{p}</p></section>)}</div>
-  <section className="pt-14"><div className="flex items-center justify-between"><div><p className="eyebrow mb-3">人群张力模型</p><h2 className="section-title">从一个信号，走向一条人性真相。</h2></div><AiBadge/></div>
+  <section className="pt-14"><div className="flex items-center justify-between"><div><p className="eyebrow mb-3">人群张力模型</p><h2 className="section-title">从趋势变化，找到品牌可以进入的真实需求。</h2></div><AiBadge/></div>
     <div className="mt-10">{tension.map(([label,text],i)=><div key={label} className={`grid gap-4 border-t border-black/15 py-6 md:grid-cols-[210px_1fr] ${i===4?"bg-ink px-6 text-white":""}`}><div className="flex items-center gap-3"><span className={`grid h-8 w-8 place-items-center rounded-full border text-xs ${i===4?"border-white/30":"border-black/20"}`}>{i+1}</span><span className={`eyebrow ${i===4?"!text-white/50":""}`}>{label}</span></div><p className={`${i===4?"font-serif text-3xl leading-snug md:text-5xl":"max-w-3xl text-lg leading-relaxed text-black/70"}`}>{i===4?`“${text}”`:text}</p></div>)}</div>
   </section><NextAction href="/opportunity" meta="下一步 / 加入品牌视角" label="生成品牌机会"/></div></>}

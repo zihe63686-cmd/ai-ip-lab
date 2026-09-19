@@ -1,0 +1,3 @@
+export interface Change { label:string; previous:string; current:string; status:'延续趋势'|'新增趋势'|'衰退热点'; finding:string }
+export type TrendChange=Change; export type KeywordChange=Change; export type AudienceChange=Change; export type ConsumptionChange=Change; export type VisualChange=Change;
+export interface YoYReview { previousProjectId:string;currentProjectId:string;previousPeriod:{start:string;end:string};currentPeriod:{start:string;end:string};trendChanges:TrendChange[];keywordChanges:KeywordChange[];audienceChanges:AudienceChange[];consumptionChanges:ConsumptionChange[];visualChanges:VisualChange[];interactionChanges:Change[] }

@@ -1,4 +1,4 @@
-# AI IP LAB
+# AI营销工作台
 
 A desktop-first interactive MVP for a creative intelligence platform, built with Next.js, TypeScript and Tailwind CSS.
 

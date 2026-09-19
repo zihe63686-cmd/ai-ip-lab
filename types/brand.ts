@@ -1,0 +1,1 @@
+export interface BrandPastProject {id:string;name:string;year:number;objective:string;bigIdea:string;workflow:string[];assets:string[];results:Record<string,string>;review:string;learning:string}

@@ -1,4 +1,4 @@
-name: Deploy AI IP LAB to GitHub Pages
+name: Deploy AI营销工作台 to GitHub Pages
 
 on:
   push:
